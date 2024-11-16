@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace DataTool_Data_DataLoupe
 {
@@ -20,9 +21,23 @@ namespace DataTool_Data_DataLoupe
     /// </summary>
     public partial class MainWindow : Window
     {
+        private DispatcherTimer timer;
         public MainWindow()
         {
             InitializeComponent();
+            // 3秒後にRadialMenuを表示するためのタイマーを設定
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(3);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            timer.Stop();
+            startupImage.Visibility = Visibility.Collapsed;
+            radialMenu.Visibility = Visibility.Visible;
+            radialMenu.IsOpen = true;
         }
 
         private void CloseBotton(object sender, RoutedEventArgs e)
@@ -33,33 +48,33 @@ namespace DataTool_Data_DataLoupe
 
         private void ImportButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("ラベルなしデータを取り込む処理を追加");
+            MessageBox.Show("sample1");
         }
 
 
         private void SSLButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("自己教師あり学習により、特徴量を学習");
+            MessageBox.Show("sample2");
         }
 
         private void VisualizeButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("特徴空間上で可視化する処理を加えます");
+            MessageBox.Show("sample3");
         }
 
         private void ImageAnalizeButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("ImageJを利用して画像の分析を瞬時に出力します");
+            MessageBox.Show("sample4");
         }
 
         private void DriftButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("運用で利用するデータセットとのドリフト比較検査を行います。");
+            MessageBox.Show("sample5");
         }
 
         private void EvalutionButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("EDA評価を実施");
+            MessageBox.Show("sample6");
         }
     }
 
