@@ -74,7 +74,7 @@ namespace DataTool_Data_DataLoupe
 
         private void EvalutionButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("sample5");
+            MessageBox.Show("sample6");
         }
     }
 
