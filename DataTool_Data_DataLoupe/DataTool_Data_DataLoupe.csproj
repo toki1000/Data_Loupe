@@ -104,10 +104,12 @@
     <Resource Include="Aicon\drift.png" />
     <Resource Include="Aicon\install.png" />
     <Resource Include="Aicon\learning.png" />
-    <Resource Include="Aicon\logo.png" />
     <Resource Include="Aicon\monitor2.png" />
     <Resource Include="Aicon\scatter.png" />
     <Resource Include="Aicon\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Aicon\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
