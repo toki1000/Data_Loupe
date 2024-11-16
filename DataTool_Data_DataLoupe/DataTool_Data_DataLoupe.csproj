@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RadialMenu">
+      <HintPath>..\..\Radial_check\RadialMenu.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -93,6 +96,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Aicon\close.png" />
+    <Resource Include="Aicon\data.png" />
+    <Resource Include="Aicon\dataset.png" />
+    <Resource Include="Aicon\drift.png" />
+    <Resource Include="Aicon\install.png" />
+    <Resource Include="Aicon\learning.png" />
+    <Resource Include="Aicon\logo.png" />
+    <Resource Include="Aicon\monitor2.png" />
+    <Resource Include="Aicon\scatter.png" />
+    <Resource Include="Aicon\tag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

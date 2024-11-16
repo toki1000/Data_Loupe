@@ -1,0 +1,17 @@
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\bin\Debug\DataTool_Data_DataLoupe.exe.config
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\bin\Debug\DataTool_Data_DataLoupe.exe
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\bin\Debug\DataTool_Data_DataLoupe.pdb
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\bin\Debug\RadialMenu.dll
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe.csproj.AssemblyReference.cache
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\MainWindow.g.cs
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\App.g.cs
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe_MarkupCompile.cache
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe_MarkupCompile.lref
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\MainWindow.baml
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe.g.resources
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe.Properties.Resources.resources
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe.csproj.GenerateResource.cache
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe.csproj.CoreCompileInputs.cache
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool.3F36D380.Up2Date
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe.exe
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe.pdb
