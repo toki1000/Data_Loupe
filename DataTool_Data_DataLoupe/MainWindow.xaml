@@ -4,9 +4,69 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataTool_Data_DataLoupe"
+        xmlns:Controls="clr-namespace:RadialMenu.Controls;assembly=RadialMenu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="350">
     <Grid>
-        
+        <Controls:RadialMenu x:Name="radialMenu" IsOpen="True">
+            <Controls:RadialMenu.CentralItem>
+                <Controls:RadialMenuCentralItem Click="CloseBotton">
+                    <StackPanel>
+                        <Image Source="Aicon/close.png" Width="32" Height="32" Visibility="Visible"/>
+                        <TextBlock Text="Close" />
+                    </StackPanel>
+
+                </Controls:RadialMenuCentralItem>
+            </Controls:RadialMenu.CentralItem>
+
+
+            <Controls:RadialMenuItem Click="ImportButton">
+                <StackPanel>
+                    <Image Source="Aicon/install.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Import" />
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+
+            <Controls:RadialMenuItem Click="EvalutionButton">
+                <StackPanel>
+                    <Image Source="Aicon/monitor2.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="EDA" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+
+            <Controls:RadialMenuItem Click="SSLButton">
+                <StackPanel>
+                    <Image Source="Aicon/learning.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Feature Learning" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+
+            <Controls:RadialMenuItem Click="VisualizeButton">
+                <StackPanel>
+                    <Image Source="Aicon/scatter.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Visualize" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+            <Controls:RadialMenuItem Click="ImageAnalizeButton" >
+                <StackPanel>
+                    <Image Source="Aicon/dataset.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Analyse Images" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+            <Controls:RadialMenuItem Click="DriftButton">
+                <StackPanel>
+                    <Image Source="Aicon/drift.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Drift Check" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+
+        </Controls:RadialMenu>
+
     </Grid>
 </Window>
