@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataTool_Data_DataLoupe"
+        xmlns:local_p ="clr-namespace:CircularProgressBarExample"
         xmlns:Controls="clr-namespace:RadialMenu.Controls;assembly=RadialMenu"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="350">
@@ -39,8 +40,8 @@
 
             <Controls:RadialMenuItem Click="EvalutionButton">
                 <StackPanel>
-                    <Image Source="Aicon/monitor2.png" Width="32" Height="32" Visibility="Visible"/>
-                    <TextBlock Text="EDA" Foreground="black"/>
+                    <Image Source="Aicon/data.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Param Editor" Foreground="black"/>
                 </StackPanel>
             </Controls:RadialMenuItem>
 
@@ -48,7 +49,7 @@
             <Controls:RadialMenuItem Click="SSLButton">
                 <StackPanel>
                     <Image Source="Aicon/learning.png" Width="32" Height="32" Visibility="Visible"/>
-                    <TextBlock Text="Feature Learning" Foreground="black"/>
+                    <TextBlock Text="Extraction" Foreground="black"/>
                 </StackPanel>
             </Controls:RadialMenuItem>
 
@@ -63,7 +64,7 @@
             <Controls:RadialMenuItem Click="ImageAnalizeButton" >
                 <StackPanel>
                     <Image Source="Aicon/dataset.png" Width="32" Height="32" Visibility="Visible"/>
-                    <TextBlock Text="Analyse Images" Foreground="black"/>
+                    <TextBlock Text="Analyse" Foreground="black"/>
                 </StackPanel>
             </Controls:RadialMenuItem>
 
@@ -76,6 +77,12 @@
 
 
         </Controls:RadialMenu>
+
+        <local_p:CircularProgressBar x:Name ="progressbar" Value="{Binding ProgressValue}" Width="260"
+                                    Height="260" StrokeThickness="5" Background="LightGray" 
+                                    Foreground="LightSalmon" Visibility="Hidden"/>
+
+
 
     </Grid>
 </Window>
