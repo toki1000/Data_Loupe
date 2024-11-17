@@ -8,6 +8,7 @@
         xmlns:Controls="clr-namespace:RadialMenu.Controls;assembly=RadialMenu"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="350">
+    
     <Grid>
 
         <Image x:Name="startupImage" Source="Aicon/logo.png" Visibility="Visible" Stretch="Fill" IsEnabled="True" VerticalAlignment="Top" HorizontalAlignment="Left">
@@ -18,10 +19,10 @@
                 </LinearGradientBrush>
             </Image.OpacityMask>
         </Image>
-        
+
         <Controls:RadialMenu x:Name="radialMenu" IsOpen="False">
             <Controls:RadialMenu.CentralItem>
-                <Controls:RadialMenuCentralItem Click="CloseBotton">
+                <Controls:RadialMenuCentralItem Click="CloseBotton" Style="{StaticResource FancyRadialMenuCentralItem}">
                     <StackPanel>
                         <Image Source="Aicon/close.png" Width="32" Height="32" Visibility="Visible"/>
                         <TextBlock Text="Close" Margin="1,0,0,0" />
@@ -31,15 +32,10 @@
             </Controls:RadialMenu.CentralItem>
 
 
-            <Controls:RadialMenuItem Click="ImportButton" x:Name ="Import">
-                <StackPanel>
-                    <Image Source="Aicon/install.png" Width="32" Height="32" Visibility="Visible"/>
-                    <TextBlock Text="Import" />
-                </StackPanel>
-            </Controls:RadialMenuItem>
 
 
-            <Controls:RadialMenuItem Click="EvalutionButton">
+
+            <Controls:RadialMenuItem Click="EvalutionButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
                     <Image Source="Aicon/data.png" Width="32" Height="32" Visibility="Visible"/>
                     <TextBlock Text="Param Editor" Foreground="black"/>
@@ -47,7 +43,7 @@
             </Controls:RadialMenuItem>
 
 
-            <Controls:RadialMenuItem Click="SSLButton">
+            <Controls:RadialMenuItem Click="SSLButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
                     <Image Source="Aicon/learning.png" Width="32" Height="32" Visibility="Visible"/>
                     <TextBlock Text="Extraction" Foreground="black"/>
@@ -55,31 +51,40 @@
             </Controls:RadialMenuItem>
 
 
-            <Controls:RadialMenuItem Click="VisualizeButton">
+            <Controls:RadialMenuItem Click="VisualizeButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
                     <Image Source="Aicon/scatter.png" Width="32" Height="32" Visibility="Visible"/>
                     <TextBlock Text="Visualize" Foreground="black"/>
                 </StackPanel>
             </Controls:RadialMenuItem>
 
-            <Controls:RadialMenuItem Click="ImageAnalizeButton" >
+            <Controls:RadialMenuItem Click="ImageAnalizeButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
                     <Image Source="Aicon/dataset.png" Width="32" Height="32" Visibility="Visible"/>
-                    <TextBlock Text="Analyse" Foreground="black"/>
+                    <TextBlock Text="Improve" Foreground="black"/>
                 </StackPanel>
             </Controls:RadialMenuItem>
 
-            <Controls:RadialMenuItem Click="DriftButton">
+            <Controls:RadialMenuItem Click="DriftButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
                     <Image Source="Aicon/drift.png" Width="32" Height="32" Visibility="Visible"/>
                     <TextBlock Text="Drift Check" Foreground="black"/>
                 </StackPanel>
             </Controls:RadialMenuItem>
+
+            <Controls:RadialMenuItem Click="ImportButton" x:Name ="Import" Style="{StaticResource FancyRadialMenuItem}">
+                <StackPanel>
+                    <Image Source="Aicon/construction.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Setting" />
+                </StackPanel>
+            </Controls:RadialMenuItem>
+            
+            
         </Controls:RadialMenu>
 
         <Controls:RadialMenu x:Name="radialmenu_analyse" IsOpen="False">
             <Controls:RadialMenu.CentralItem>
-                <Controls:RadialMenuCentralItem Click="BackBotton">
+                <Controls:RadialMenuCentralItem Click="BackBotton" Style="{StaticResource FancyRadialMenuCentralItem}">
                     <StackPanel>
                         <Image Source="Aicon/back.png" Width="32" Height="32" Visibility="Visible"/>
                         <TextBlock Text="Back" Margin="1,0,0,0" />
@@ -90,22 +95,22 @@
 
 
 
-            <Controls:RadialMenuItem Click="SettingButton" >
+            <Controls:RadialMenuItem Click="SettingButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
-                    <Image Source="Aicon/data.png" Width="32" Height="32" Visibility="Visible"/>
-                    <TextBlock Text="Param Set" Foreground="black"/>
-                </StackPanel>
-            </Controls:RadialMenuItem>
-            
-            
-            <Controls:RadialMenuItem Click="RedundantButton" >
-                <StackPanel>
-                    <Image Source="Aicon/chose.png" Width="32" Height="32" Visibility="Visible"/>
-                    <TextBlock Text="Redundant" Foreground="black"/>
+                    <Image Source="Aicon/sample.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Generation" Foreground="black"/>
                 </StackPanel>
             </Controls:RadialMenuItem>
 
-            <Controls:RadialMenuItem Click="CleansingButton" >
+
+            <Controls:RadialMenuItem Click="RedundantButton" Style="{StaticResource FancyRadialMenuItem}">
+                <StackPanel>
+                    <Image Source="Aicon/chose.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Streamlining" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+            <Controls:RadialMenuItem Click="CleansingButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
                     <Image Source="Aicon/rule_check.png" Width="32" Height="32" Visibility="Visible"/>
                     <TextBlock Text="Cleansing" Foreground="black"/>
@@ -114,9 +119,9 @@
 
         </Controls:RadialMenu>
 
-        <local_p:CircularProgressBar x:Name ="progressbar" Value="{Binding ProgressValue}" Width="260"
-                                    Height="260" StrokeThickness="5" Background="LightGray" 
-                                    Foreground="LightSalmon" Visibility="Hidden"/>
+        <local_p:CircularProgressBar x:Name ="progressbar" Value="{Binding ProgressValue}" Width="255"
+                                    Height="255" StrokeThickness="5" Background="white" 
+                                    Foreground="Coral" Visibility="Hidden"/>
 
     </Grid>
 </Window>

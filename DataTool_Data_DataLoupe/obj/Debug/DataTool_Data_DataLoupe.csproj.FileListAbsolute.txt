@@ -17,3 +17,4 @@ C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\
 C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe.pdb
 C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\DataTool_Data_DataLoupe_Content.g.cs
 C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\b45ti\source\repos\DataTool_Data_DataLoupe\DataTool_Data_DataLoupe\obj\Debug\App.baml
