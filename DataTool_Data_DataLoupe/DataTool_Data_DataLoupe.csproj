@@ -121,6 +121,8 @@
     <Resource Include="Aicon\bug_find.png" />
     <Resource Include="Aicon\chose.png" />
     <Resource Include="Aicon\rule_check.png" />
+    <Resource Include="Aicon\construction.png" />
+    <Resource Include="Aicon\sample.png" />
     <Content Include="Libs\RadialMenu.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
