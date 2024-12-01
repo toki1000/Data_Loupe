@@ -65,9 +65,14 @@ namespace DataTool_Data_DataLoupe
         }
 
 
-        private void SSLButton(object sender, RoutedEventArgs e)
+        private async void ExtractionButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("sample2");
+ 
+            //MessageBox.Show("sample4");
+            radialMenu.IsOpen = false;
+            await Task.Delay(400);
+            radialMenu.Items = GlobalRadialMenuItems;
+            radialmenu_extraction.IsOpen = true;
         }
 
         private void VisualizeButton(object sender, RoutedEventArgs e)
@@ -76,13 +81,13 @@ namespace DataTool_Data_DataLoupe
         }
 
 
-        private async void ImageAnalizeButton(object sender, RoutedEventArgs e)
+        private async void ImproveButton(object sender, RoutedEventArgs e)
         {
             //MessageBox.Show("sample4");
             radialMenu.IsOpen = false;
             await Task.Delay(400);
             radialMenu.Items = GlobalRadialMenuItems;
-            radialmenu_analyse.IsOpen = true;
+            radialmenu_Improve.IsOpen = true;
         }
 
         private async void DriftButton(object sender, RoutedEventArgs e)
@@ -120,10 +125,10 @@ namespace DataTool_Data_DataLoupe
 
         }
 
-        private async void BackBotton(object sender, RoutedEventArgs e)
+        private async void ImproveBackBotton(object sender, RoutedEventArgs e)
         {
             //MessageBox.Show("sample4");
-            radialmenu_analyse.IsOpen = false;
+            radialmenu_Improve.IsOpen = false;
             await Task.Delay(400);
             radialMenu.Items = GlobalRadialMenuItems;
             radialMenu.IsOpen = true;
@@ -156,6 +161,59 @@ namespace DataTool_Data_DataLoupe
         private void SettingButton(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private async void ExtractionBackBotton(object sender, RoutedEventArgs e)
+        {
+            radialmenu_extraction.IsOpen = false;
+            await Task.Delay(400);
+            radialMenu.Items = GlobalRadialMenuItems;
+            radialMenu.IsOpen = true;
+        }
+
+        private async void ZeroLabelButton(object sender, RoutedEventArgs e)
+        {
+            radialmenu_extraction.IsOpen = false;
+            await Task.Delay(400);
+            radialMenu.Items = GlobalRadialMenuItems;
+            radialmenu_setinfo.IsOpen = true;
+
+            // データの情報を表示するためのウィンドウを表示
+            var f= new DataInfoWindow();
+            f.ShowDialog();
+        }
+
+        private void AllLabelButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HalfLabelButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OpenFolderButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OpenParamButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TrainingButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private async void ExtractionSettingBackBotton(object sender, RoutedEventArgs e)
+        {
+            radialmenu_setinfo.IsOpen = false;
+            await Task.Delay(400);
+            radialMenu.Items = GlobalRadialMenuItems;
+            radialmenu_extraction.IsOpen = true;
         }
     }
     public static class ProcessExtensions
