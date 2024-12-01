@@ -59,6 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DataInfoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +72,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CircularProgressBar.cs" />
+    <Compile Include="DataInfo.cs" />
+    <Compile Include="DataInfoWindow.xaml.cs">
+      <DependentUpon>DataInfoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -75,6 +83,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParamInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -123,6 +132,12 @@
     <Resource Include="Aicon\rule_check.png" />
     <Resource Include="Aicon\construction.png" />
     <Resource Include="Aicon\sample.png" />
+    <Resource Include="Aicon\conf_ai.png" />
+    <Resource Include="Aicon\folder_open.png" />
+    <Resource Include="Aicon\non_ai.png" />
+    <Resource Include="Aicon\non_folder.png" />
+    <Resource Include="Aicon\rule_folder.png" />
+    <Resource Include="Aicon\label_ai.png" />
     <Content Include="Libs\RadialMenu.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

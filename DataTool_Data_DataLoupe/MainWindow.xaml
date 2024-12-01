@@ -43,7 +43,7 @@
             </Controls:RadialMenuItem>
 
 
-            <Controls:RadialMenuItem Click="SSLButton" Style="{StaticResource FancyRadialMenuItem}">
+            <Controls:RadialMenuItem Click="ExtractionButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
                     <Image Source="Aicon/learning.png" Width="32" Height="32" Visibility="Visible"/>
                     <TextBlock Text="Extraction" Foreground="black"/>
@@ -58,7 +58,7 @@
                 </StackPanel>
             </Controls:RadialMenuItem>
 
-            <Controls:RadialMenuItem Click="ImageAnalizeButton" Style="{StaticResource FancyRadialMenuItem}">
+            <Controls:RadialMenuItem Click="ImproveButton" Style="{StaticResource FancyRadialMenuItem}">
                 <StackPanel>
                     <Image Source="Aicon/dataset.png" Width="32" Height="32" Visibility="Visible"/>
                     <TextBlock Text="Improve" Foreground="black"/>
@@ -82,9 +82,9 @@
             
         </Controls:RadialMenu>
 
-        <Controls:RadialMenu x:Name="radialmenu_analyse" IsOpen="False">
+        <Controls:RadialMenu x:Name="radialmenu_Improve" IsOpen="False">
             <Controls:RadialMenu.CentralItem>
-                <Controls:RadialMenuCentralItem Click="BackBotton" Style="{StaticResource FancyRadialMenuCentralItem}">
+                <Controls:RadialMenuCentralItem Click="ImproveBackBotton" Style="{StaticResource FancyRadialMenuCentralItem}">
                     <StackPanel>
                         <Image Source="Aicon/back.png" Width="32" Height="32" Visibility="Visible"/>
                         <TextBlock Text="Back" Margin="1,0,0,0" />
@@ -114,6 +114,77 @@
                 <StackPanel>
                     <Image Source="Aicon/rule_check.png" Width="32" Height="32" Visibility="Visible"/>
                     <TextBlock Text="Cleansing" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+        </Controls:RadialMenu>
+
+
+
+        <Controls:RadialMenu x:Name="radialmenu_extraction" IsOpen="False">
+            <Controls:RadialMenu.CentralItem>
+                <Controls:RadialMenuCentralItem Click="ExtractionBackBotton" Style="{StaticResource FancyRadialMenuCentralItem}">
+                    <StackPanel>
+                        <Image Source="Aicon/back.png" Width="32" Height="32" Visibility="Visible"/>
+                        <TextBlock Text="Back" Margin="1,0,0,0" />
+                    </StackPanel>
+
+                </Controls:RadialMenuCentralItem>
+            </Controls:RadialMenu.CentralItem>
+
+            <Controls:RadialMenuItem Click="ZeroLabelButton" Style="{StaticResource FancyRadialMenuItem}">
+                <StackPanel>
+                    <Image Source="Aicon/non_ai.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Zero Label" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+            <Controls:RadialMenuItem Click="AllLabelButton" Style="{StaticResource FancyRadialMenuItem}">
+                <StackPanel>
+                    <Image Source="Aicon/label_ai.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="All Label" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+            <Controls:RadialMenuItem Click="HalfLabelButton" Style="{StaticResource FancyRadialMenuItem}">
+                <StackPanel>
+                    <Image Source="Aicon/conf_ai.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Half Label" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+        </Controls:RadialMenu>
+
+
+        <Controls:RadialMenu x:Name="radialmenu_setinfo" IsOpen="False">
+            <Controls:RadialMenu.CentralItem>
+                <Controls:RadialMenuCentralItem Click="ExtractionSettingBackBotton" Style="{StaticResource FancyRadialMenuCentralItem}">
+                    <StackPanel>
+                        <Image Source="Aicon/back.png" Width="32" Height="32" Visibility="Visible"/>
+                        <TextBlock Text="Back" Margin="1,0,0,0" />
+                    </StackPanel>
+
+                </Controls:RadialMenuCentralItem>
+            </Controls:RadialMenu.CentralItem>
+
+            <Controls:RadialMenuItem Click="OpenFolderButton" Style="{StaticResource FancyRadialMenuItem}">
+                <StackPanel>
+                    <Image Source="Aicon/folder_open.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Open Folder" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+            <Controls:RadialMenuItem Click="OpenParamButton" Style="{StaticResource FancyRadialMenuItem}">
+                <StackPanel>
+                    <Image Source="Aicon/data.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Open Paramfile" Foreground="black"/>
+                </StackPanel>
+            </Controls:RadialMenuItem>
+
+            <Controls:RadialMenuItem Click="TrainingButton" Style="{StaticResource FancyRadialMenuItem}">
+                <StackPanel>
+                    <Image Source="Aicon/learning.png" Width="32" Height="32" Visibility="Visible"/>
+                    <TextBlock Text="Learning" Foreground="black"/>
                 </StackPanel>
             </Controls:RadialMenuItem>
 

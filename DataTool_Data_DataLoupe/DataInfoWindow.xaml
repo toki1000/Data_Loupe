@@ -1,0 +1,32 @@
+﻿<Window x:Class="DataTool_Data_DataLoupe.DataInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataTool_Data_DataLoupe"
+        mc:Ignorable="d"
+        Title="datainfo" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Dataset Path"
+                       FontSize="16"
+                       Margin="5,0,0,0"
+                       TextTrimming="CharacterEllipsis"/>
+
+
+
+            <ListView x:Name="DataInfoListView" Margin="0,5,0,0" Height="30">
+            </ListView>
+
+            <TextBlock Text="Parameter Path"
+                       FontSize="16"
+                       Margin="5,35,0,0"
+                       TextTrimming="CharacterEllipsis"/>
+
+            <ListView x:Name="ParamInfoListView" Margin="0,5,0,0" Height="30">
+            </ListView>
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>
